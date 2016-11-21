@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Tic_Tac_model</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/component.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="col-md-12">
+                    <h1>Tic-Tac-Toe Game</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Vanilla+Backbone</h1>
+                <p>This is an example of the Tic-Tac game built with Backbone and VanillaJS Baby.</p>
+            </div>
+        </div>
+
+        <section class="container stage">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="box">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                     </ul>
+
+                    <button class="btn btn-lg btn-primary restart">Restart Game</button>
+                </div>
+            </div>
+
+            <div class="ct">
+                <div class="overlay hide"></div>
+                <div class="setup hide"></div>
+                <div class="winner hide"></div>
+                <div class="tie hide"></div>
+            </div>
+
+            <audio src="assets/audio/button.mp3" preload="auto" controls>
+                <p>Sorry! Your browser does not have audio element support.</p>
+            </audio>
+        </section><!-- stage -->
+
+        <footer id="footer">
+          
+        </footer>
+
+        <script type="text/html" id="tmp-setup">
+            <p>Would you like to play;) </p>
+            <button class="btn btn-lg btn-primary cpu">Yes</button>
+            <button class="btn btn-lg btn-danger multi">No</button>
+        </script>
+
+        <script type="text/html" id="tmp-winner">
+            <p>The player <b></b> won!</p>
+            <button class="btn btn-lg btn-primary play">Play Again Man</button>
+        </script>
+
+        <script type="text/html" id="tmp-tie">
+            <p>No winner for now ok? =/</p>
+            <button class="btn btn-lg btn-primary play">Play again Man</button>
+        </script>
+
+        <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="assets/vendor/underscore/underscore-min.js"></script>
+        <script src="assets/vendor/backbone/backbone.js"></script>
+
+        <script src="assets/js/model/Player.js"></script>
+        <script src="assets/js/model/Cpu.js"></script>
+        <script src="assets/js/model/Players.js"></script>
+
+        <script src="assets/js/view/Modal.js"></script>
+        <script src="assets/js/view/modal/Setup.js"></script>
+        <script src="assets/js/view/modal/Winner.js"></script>
+        <script src="assets/js/view/modal/Tie.js"></script>
+        <script src="assets/js/view/Position.js"></script>
+        <script src="assets/js/view/Board.js"></script>
+        <script src="assets/js/view/AudioPlayer.js"></script>
+        <script src="assets/js/view/Tictactoe.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
+
+\\end teste
